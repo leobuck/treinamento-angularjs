@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html ng-app="Include">
+<head>
+    <meta charset="utf-8" />
+    <title>Diretiva ng-include</title>
+    <script src="Lib/angular.js"></script>
+    <link href="Lib/bootstrap.css" rel="stylesheet" />
+    <script src="Lib/angular-locale_pt-br.js"></script>
+    <script>
+        var app = angular.module("Include", []).controller("IncludeCtrl", function ($scope) {
+            $scope.funcionarios = [
+                { nome: "Leo", nascimento: new Date("May 12 1998"), sexo: "Masculino", salario: 5500.78 },
+                { nome: "Ana", nascimento: new Date("November 23 1975"), sexo: "Feminino", salario: 2301.34 },
+                { nome: "Pedro", nascimento: new Date("July 3 1985"), sexo: "Masculino", salario: 1009.00 },
+                { nome: "Maria Clara", nascimento: new Date("April 15 1945"), sexo: "Feminino", salario: 2234.60 },
+                { nome: "Julia", nascimento: new Date("August 13 1965"), sexo: "Feminino", salario: 4432.45 }
+            ];
+
+            $scope.hoje = new Date();
+            $scope.FuncionariosView = "FuncionariosTabela.html"
+        });
+    </script>
+</head>
+<body ng-controller="IncludeCtrl">
+    <div class="well">
+        <div ng-include="'Cabecalho.html'"></div>   
+        <hr />
+        Selecione o modo de visualização:
+        <select ng-model="FuncionariosView">
+            <option value="FuncionariosTabela.html">Tabela</option>
+            <option value="FuncionariosLista.html">Lista</option>
+        </select>
+        <hr />
+        <div ng-include="FuncionariosView"></div>        
+    </div>
+</body>
+</html>

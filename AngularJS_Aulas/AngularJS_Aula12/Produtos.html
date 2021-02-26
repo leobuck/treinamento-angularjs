@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html ng-app="ProdutosApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Consumindo um WebService</title>
+    <script src="lib/angular.js"></script>
+    <link href="lib/bootstrap.css" rel="stylesheet" />
+    <script src="script/Angular1.js"></script>
+</head>
+<body>
+    <div ng-controller="produtosCtrl">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                    <th>Estoque</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="produto in produtos">
+                    <td>{{produto.Id}}</td>
+                    <td>{{produto.Nome}}</td>
+                    <td>{{produto.Descricao}}</td>
+                    <td>{{produto.Preco}}</td>
+                    <td>{{produto.Estoque}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="utf-8" />
+    <title>ng-disable, ng-click e ng-src</title>
+    <script src="Lib/angular.js"></script>
+</head>
+<body>
+    <div>
+        <h2>ng-disable</h2>
+        <label>Clique aqui => <input type="checkbox" ng-model="checked" /></label>
+        <br />
+        <button ng-disabled="checked">Sair da Aplicação</button>
+        {{checked}}
+    </div>
+    <div>
+        <h2>ng-click</h2>
+        <button ng-click="contar = contar + 1" ng-init="contar = 0">Aumentar</button>
+        <br />
+        {{contar}}
+    </div>
+    <div>
+        <h2>ng-src</h2>
+        <img ng-src="Imagens/manchester.png" style="width:150px; height:150px"/>
+        <img ng-src="Imagens/chelsea.png" style="width:150px; height:150px"/>
+    </div>
+</body>
+</html>

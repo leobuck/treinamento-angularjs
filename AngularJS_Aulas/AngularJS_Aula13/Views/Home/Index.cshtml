@@ -1,0 +1,34 @@
+﻿<h3>Leo</h3>
+<hr />
+<div ng-controller="livrosCtrl">
+    <table class="table table-striped">
+        <tr ng-repeat="livro in livros">
+            <td>{{livro.Titulo}}</td>
+            <td>{{livro.Autor}}</td>
+            <td class="text-right">
+                <button class="btn btn-danger" ng-click="DeletaLivro(livro)" data-toggle="tooltip" title="Clique para Deletar o Livro">X</button>
+            </td>
+            <td class="text-right">
+                <button class="btn btn-success" ng-click="SelecionaLivro(livro)" data-toggle="tooltip" title="Clique para Selecionar o Livro">S</button>
+            </td>
+        </tr>
+        <tr>
+            <th>Titulo</th>
+            <th>Autor</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input type="text" required ng-model="livro.Titulo" placeholder="Titulo do Livro"/></td>
+            <td><input type="text" required ng-model="livro.Autor" placeholder="Autor do Livro"/></td>
+            <td>
+                <a href="#" class="btn btn-primary" ng-click="IncluiLivro(livro)" ng-disabled="!livro.Titulo || !livro.Autor"
+                   data-toggle="tooltip" title="Incluir">Novo</a>
+            </td>
+            <td>
+                <a href="#" class="btn btn-success" ng-click="AlteraLivro(livro)" ng-disabled="!livro.Titulo || !livro.Autor"
+                   data-toggle="tooltip" title="Alterar">Altera</a>
+            </td>
+        </tr>
+    </table>
+</div>

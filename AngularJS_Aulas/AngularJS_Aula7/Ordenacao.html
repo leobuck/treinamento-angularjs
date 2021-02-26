@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html ng-app="filtros">
+<head>
+    <meta charset="utf-8" />
+    <title>Ordenação</title>
+    <script src="Lib/angular.js"></script>
+    <link href="Lib/bootstrap.css" rel="stylesheet" />
+    <script src="Lib/angular-locale_pt-br.js"></script>
+    <script>
+        var app = angular.module("filtros", []).controller("filtrosCtrl", function ($scope) {
+            $scope.funcionarios = [
+                { nome: "Leo", nascimento: new Date("May 12 1998"), sexo: "Masculino", salario: 5500.78 },
+                { nome: "Ana", nascimento: new Date("November 23 1975"), sexo: "Feminino", salario: 2301.34 },
+                { nome: "Pedro", nascimento: new Date("July 3 1985"), sexo: "Masculino", salario: 1009.00 },
+                { nome: "Maria Clara", nascimento: new Date("April 15 1945"), sexo: "Feminino", salario: 2234.60 },
+                { nome: "Julia", nascimento: new Date("August 13 1965"), sexo: "Feminino", salario: 4432.45 }
+            ];
+
+            $scope.hoje = new Date();
+            $scope.coluna = 'nome';
+        });
+    </script>
+</head>
+<body ng-controller="filtrosCtrl">
+    <div class="well">
+        Leo - {{hoje | date:"dd MMMM, yyyy"}}
+        <hr />
+        Ordernar por: 
+        <select ng-model="coluna">
+            <option value="nome">Nome ASC</option>
+            <option value="-nome">Nome DESC</option>
+            <option value="sexo">Sexo ASC</option>
+            <option value="-salario">Salário DESC</option>
+            <option value="nascimento">Data de Nascimento ASC</option>
+        </select>
+        <hr />
+        <table class="table">
+            <tr>
+                <th>Nome</th>
+                <th>Data de Nascimento</th>
+                <th>Sexo</th>
+                <th>Salário (Número)</th>
+                <th>Salário (Moeda)</th>
+            </tr>
+            <tr ng-repeat="funci in funcionarios | orderBy: coluna">
+                <td>{{funci.nome | uppercase}}</td>
+                <td>{{funci.nascimento | date:"dd/MM/yyyy"}}</td>
+                <td>{{funci.sexo | lowercase}}</td>
+                <td class="text-right">{{funci.salario | number: 2}}</td>
+                <td class="text-right">{{funci.salario | currency}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

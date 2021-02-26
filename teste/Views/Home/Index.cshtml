@@ -1,0 +1,40 @@
+@using teste.Models.ViewModel;
+
+@model Tarefas
+<h1>Tarefas</h1>
+
+@using (Html.BeginForm("Salvar", "Home", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td>
+                @Html.TextBoxFor(m => m.Titulo)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.TextAreaFor(m => m.Descricao)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Salvar" />
+            </td>
+        </tr>
+    </table>
+}
+
+<table>
+    @foreach (var tarefa in Model.ListaTarefas)
+    {
+        <tr>
+            <td>
+                <h3>@tarefa.Titulo</h3>
+            </td>
+            <td valign="top">@tarefa.Descricao</td>
+            <td>
+                @Html.ActionLink("Excluir", "Excluir", "Home")
+            </td>
+        </tr>
+    }
+</table>

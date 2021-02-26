@@ -1,0 +1,12 @@
+﻿<table class="table">
+    <tr>
+        <th>Nome</th>
+        <th>Sexo</th>
+        <th>Salário</th>
+    </tr>
+    <tr ng-repeat="funci in funcionarios">
+        <td>{{funci.nome | uppercase}}</td>
+        <td>{{funci.sexo | lowercase}}</td>
+        <td class="text-right">{{funci.salario | currency}}</td>
+    </tr>
+</table>

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>AngularJS Service</title>
+    <script src="lib/angular.js"></script>
+    <script src="script/App.js"></script>
+    <script src="script/stringService.js"></script>
+</head>
+<body ng-app="leoModule">
+    <div ng-controller="leoController">
+        <table>
+            <tr>
+                <td>Texto</td>
+                <td><input type="text" ng-model="input"/></td>
+            </tr>
+            <tr>
+                <td>Resultado</td>
+                <td><input type="text" ng-model="output"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value="Processar Texto" ng-click="transformarTexto(input)"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

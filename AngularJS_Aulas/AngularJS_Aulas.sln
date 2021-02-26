@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS_Aula4", "AngularJS_Aula4\AngularJS_Aula4.csproj", "{EBEAD762-9195-48D5-AFFC-F1F6EA9AC80D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS_Aula5", "AngularJS_Aula5\AngularJS_Aula5.csproj", "{FD675F2D-9A45-4464-9981-E2A47637452C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS_Aula6", "AngularJS_Aula6\AngularJS_Aula6.csproj", "{CA23FE8A-2F92-4047-861F-F176752CF72F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS_Aula7", "AngularJS_Aula7\AngularJS_Aula7.csproj", "{2A5E859E-3634-4E19-BB8A-8A4EF0A3F12F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS_Aula8", "AngularJS_Aula8\AngularJS_Aula8.csproj", "{EAA725F7-47C7-444D-B6EF-0FA890305FF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS_Aula9", "AngularJS_Aula9\AngularJS_Aula9.csproj", "{E34B1267-63CA-4DF4-9798-3B99B5F210D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS_Aula10", "AngularJS_Aula10\AngularJS_Aula10.csproj", "{25100054-39E2-4F1A-BFA3-D7C7EC33237C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS_Aula11", "AngularJS_Aula11\AngularJS_Aula11.csproj", "{4FDCD80D-1822-41F7-8C17-1078B18EE0E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS_Aula2", "..\AngularJS_Aula2\AngularJS_Aula2\AngularJS_Aula2.csproj", "{7A211E5B-46B4-438C-8825-C5F8A5AE5D27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS_Aula3", "..\AngularJS_Aula3\AngularJS_Aula3\AngularJS_Aula3.csproj", "{205E3399-FFF5-4F5B-B65C-415F026B8B3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS_Aula12", "AngularJS_Aula12\AngularJS_Aula12.csproj", "{4A856A37-8ECA-4CAA-B747-10114DBABBB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS_Aula13", "AngularJS_Aula13\AngularJS_Aula13.csproj", "{75F50FFC-293C-4AF0-8E40-F037E2C6FA49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBEAD762-9195-48D5-AFFC-F1F6EA9AC80D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBEAD762-9195-48D5-AFFC-F1F6EA9AC80D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBEAD762-9195-48D5-AFFC-F1F6EA9AC80D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBEAD762-9195-48D5-AFFC-F1F6EA9AC80D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD675F2D-9A45-4464-9981-E2A47637452C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD675F2D-9A45-4464-9981-E2A47637452C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD675F2D-9A45-4464-9981-E2A47637452C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD675F2D-9A45-4464-9981-E2A47637452C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA23FE8A-2F92-4047-861F-F176752CF72F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA23FE8A-2F92-4047-861F-F176752CF72F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA23FE8A-2F92-4047-861F-F176752CF72F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA23FE8A-2F92-4047-861F-F176752CF72F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A5E859E-3634-4E19-BB8A-8A4EF0A3F12F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A5E859E-3634-4E19-BB8A-8A4EF0A3F12F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A5E859E-3634-4E19-BB8A-8A4EF0A3F12F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A5E859E-3634-4E19-BB8A-8A4EF0A3F12F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAA725F7-47C7-444D-B6EF-0FA890305FF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAA725F7-47C7-444D-B6EF-0FA890305FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAA725F7-47C7-444D-B6EF-0FA890305FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAA725F7-47C7-444D-B6EF-0FA890305FF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E34B1267-63CA-4DF4-9798-3B99B5F210D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E34B1267-63CA-4DF4-9798-3B99B5F210D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E34B1267-63CA-4DF4-9798-3B99B5F210D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E34B1267-63CA-4DF4-9798-3B99B5F210D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25100054-39E2-4F1A-BFA3-D7C7EC33237C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25100054-39E2-4F1A-BFA3-D7C7EC33237C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25100054-39E2-4F1A-BFA3-D7C7EC33237C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25100054-39E2-4F1A-BFA3-D7C7EC33237C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FDCD80D-1822-41F7-8C17-1078B18EE0E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FDCD80D-1822-41F7-8C17-1078B18EE0E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FDCD80D-1822-41F7-8C17-1078B18EE0E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FDCD80D-1822-41F7-8C17-1078B18EE0E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A211E5B-46B4-438C-8825-C5F8A5AE5D27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A211E5B-46B4-438C-8825-C5F8A5AE5D27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A211E5B-46B4-438C-8825-C5F8A5AE5D27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A211E5B-46B4-438C-8825-C5F8A5AE5D27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{205E3399-FFF5-4F5B-B65C-415F026B8B3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{205E3399-FFF5-4F5B-B65C-415F026B8B3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{205E3399-FFF5-4F5B-B65C-415F026B8B3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{205E3399-FFF5-4F5B-B65C-415F026B8B3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A856A37-8ECA-4CAA-B747-10114DBABBB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A856A37-8ECA-4CAA-B747-10114DBABBB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A856A37-8ECA-4CAA-B747-10114DBABBB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A856A37-8ECA-4CAA-B747-10114DBABBB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75F50FFC-293C-4AF0-8E40-F037E2C6FA49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75F50FFC-293C-4AF0-8E40-F037E2C6FA49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75F50FFC-293C-4AF0-8E40-F037E2C6FA49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75F50FFC-293C-4AF0-8E40-F037E2C6FA49}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F0B4986-36A7-4518-98BD-28186403AA1A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html ng-app="campeonato">
+<head>
+    <meta charset="utf-8" />
+    <title>Campeonato Europeu</title>
+    <script src="Lib/angular.js"></script>
+    <link href="Lib/bootstrap.css" rel="stylesheet" />
+    <script>
+        angular.module("campeonato", []);
+        angular.module("campeonato").controller("campeonatoCtrl", function ($scope) {
+            $scope.titulo = "Classificação Europeu";
+            $scope.times = [
+                { nome: "Manchester United", pontos: 22, escudo: "/Imagens/manchester.png" },
+                { nome: "Chelsea", pontos: 20, escudo: "/Imagens/chelsea.png" },
+                { nome: "Juventus", pontos: 21, escudo: "/Imagens/juventus.png"}
+            ]; 
+
+            $scope.incluirTime = function (time) {
+                $scope.times.push(time);
+                delete $scope.time;
+            };
+        });
+    </script>
+</head>
+<body>
+    <div ng-controller="campeonatoCtrl">
+        <div class="jumbotron text-center">
+            <h3>{{titulo}}</h3>
+        </div>
+        <div class="container">
+            <table class="table table-striped">
+                <tr>
+                    <th></th>
+                    <th>Time</th>
+                    <th>Pontos</th>
+                </tr>
+                <tr ng-repeat="time in times">
+                    <td><img ng-src="{{time.escudo}}" style="width:48px; height:48px"/></td>
+                    <td>{{time.nome}}</td>
+                    <td>{{time.pontos}}</td>
+                </tr>
+            </table>
+            <hr />
+            <input class="form-control" type="text" ng-model="time.nome" placeholder="Informe o nome do time"/> <br />
+            <input class="form-control" type="text" ng-model="time.pontos" placeholder="Informe o número de pontos do time"/> <br />
+            <input class="form-control" type="text" ng-model="time.escudo" placeholder="Informe o escudo do time"/> <br />
+            <button class="btn btn-primary" ng-click="incluirTime(time)" ng-disabled="!time.nome || !time.pontos || !time.escudo">Incluir Time</button>
+            {{time}}
+        </div>
+    </div>
+</body>
+</html>
